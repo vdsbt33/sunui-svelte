@@ -1,0 +1,70 @@
+/* Breakpoints */
+@xs:  0;
+@sm:  576px;
+@md:  768px;
+@lg:  992px;
+@xl:  1200px;
+@2xl: 1400px;
+
+/* Spacing */
+@spacing: .5rem;
+
+/* Margin Full */
+each(range(5), {
+	.m@{index} {
+		margin: @spacing * @index;
+	};
+});
+
+/* Margin Horizontal */
+each(range(5), {
+	.mx@{index} {
+		margin-left: @spacing * @index;
+		margin-right: @spacing * @index;
+	};
+});
+
+/* Margin Vertical */
+each(range(5), {
+	.my@{index} {
+		margin-top: @spacing * @index;
+		margin-bottom: @spacing * @index;
+	};
+});
+
+/* Margin Left */
+each(range(5), {
+	.ml-@{index} {
+		margin-left: @spacing * @index;
+	};
+});
+
+/* Margin Top */
+each(range(5), {
+	.mt-@{index} {
+		margin-top: @spacing * @index;
+	};
+});
+
+/* Margin Right */
+each(range(5), {
+	.mr-@{index} {
+		margin-right: @spacing * @index;
+	};
+});
+
+/* Margin Bottom */
+each(range(5), {
+	.mb-@{index} {
+		margin-bottom: @spacing * @index;
+	};
+});
+
+/* Border Radius */
+@radius: .25rem;
+
+each(range(4), {
+	.b-radius-@{index} {
+		border-radius: @radius * @value;
+	};
+});

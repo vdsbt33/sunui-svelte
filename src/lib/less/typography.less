@@ -1,0 +1,33 @@
+@font-size: 14px;
+@weight-options: 100, 200, 300, 400, 500, 600, 700, 800, 900, 1000;
+@font-face {
+	font-family: 'NotoSans';
+	src: url('/fonts/NotoSans.ttf');
+	font-weight: 400;
+}
+
+:root {
+	--font-size: @font-size;
+	--font-family: NotoSans
+}
+
+html {
+	font-family: var(--font-family);
+	font-family: var(--font-size);
+}
+
+/* Font Weight */
+each(range(100, 1000, 100), {
+	.text-weight-@{value} {
+		font-weight: @value
+	}
+});
+
+/* Font Style */
+.bold {
+	font-weight: bold;
+}
+
+.italic {
+	font-style: italic;
+}
