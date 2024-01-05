@@ -1,3 +1,3 @@
-# sunui
+# sunUI
 ## A Svelte components library
 
