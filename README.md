@@ -8,3 +8,6 @@
 
 ### Development Running 
 At the root folder, run `./generate_css.sh && npm run dev`.
+
+### Contributing
+This project is currently not accepting contributions, but you may use it and fork it at your own discretion.
