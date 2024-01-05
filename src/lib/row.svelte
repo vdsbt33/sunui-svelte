@@ -1,7 +1,10 @@
 <script>
+	export let gap = 1;
 </script>
 
-<div>
+<div
+	class="row grid-gap-{gap}"
+>
 	<slot />
 </div>
 
@@ -10,3 +13,5 @@
 		display: grid;
 	}
 </style>
+
+

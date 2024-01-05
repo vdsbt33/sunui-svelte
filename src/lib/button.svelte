@@ -1,6 +1,7 @@
 <script>
 	export let classes = '';
 	export let color = 'primary';
+	export let grow = true;
 </script>
 
 <button
@@ -12,6 +13,7 @@
 	class:tertiary={color === 'tertiary'}
 	class:danger={color === 'danger'}
 	class:warning={color === 'warning'}
+	class:w-100={grow === true}
 >
 	<slot>
 		Button
