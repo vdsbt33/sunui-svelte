@@ -8,6 +8,7 @@
 - [ ] Card
 - [ ] Alert
 - [ ] Badge
+- [ ] Skeleton
 - [ ] Links
 - [ ] Images
 - [ ] Field
@@ -17,17 +18,16 @@
 - [ ] Radio
 - [ ] Range
 - [ ] Autocomplete
-- [ ] Accordion
 - [ ] Breadcrumb
-- [ ] Navbar
-- [ ] Tabs
-- [ ] Modal
-- [ ] Progress
-- [ ] Spinner
-- [ ] Tooltip
 - [ ] Table
 - [ ] Pagination
-- [ ] Skeleton
+- [ ] Accordion
+- [ ] Progress
+- [ ] Spinner
+- [ ] Modal
+- [ ] Navbar
+- [ ] Tabs
+- [ ] Tooltip
 
 ### Development requirements:
 - Node (tested on ^20.10.0)
