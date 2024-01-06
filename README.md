@@ -1,4 +1,4 @@
-![sunUI](https://github.com/vdsbt33/sunui-svelte/assets/25711149/41ad3120-2e8e-4bc3-94e0-e6625861d7d9)
+![sunUI](https://github.com/vdsbt33/sunui-svelte/assets/25711149/44dc6539-035c-467c-bb45-885649627d64)
 ## A Svelte components library
 
 ### Progress:
