@@ -8,10 +8,14 @@
 
 <Typography variant='h1' weight='1000'>Sun UI &#127774;</Typography>
 
-<Typography variant='h3'>Typography!</Typography>
+<Row>
+	<Column>
+		<Typography variant='h3'>Typography!</Typography>
+	</Column>
+</Row>
 
 <h3>Buttons</h3>
-<Row>
+<Row justify='space-evenly'>
 	<Column>
 		<Button on:click={() => alert('Hello')} />
 	</Column>

@@ -1,17 +1,10 @@
 <script>
-	export let gap = 1;
+	export let justify = 'start';
 </script>
 
 <div
-	class="row grid-gap-{gap}"
+	class="row justify-content-{justify}"
 >
 	<slot />
 </div>
-
-<style>
-	div {
-		display: grid;
-	}
-</style>
-
 

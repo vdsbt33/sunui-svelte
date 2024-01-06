@@ -8,27 +8,51 @@
 </script>
 
 {#if variant === 'p'}
-	<p class="font-weight-{weight}">
+	<p
+		class="font-weight-{weight}"
+		class:text-bold={bold}
+		class:text-italic={italic}
+	>
 		<slot />
 	</p>
 {:else if variant === 'h5'}
-	<h5 class="font-weight-{weight}">
+	<h5
+		class="font-weight-{weight}"
+		class:text-bold={bold}
+		class:text-italic={italic}
+	>
 		<slot />
 	</h5>
 {:else if variant === 'h4'}
-	<h4 class="font-weight-{weight}">
+	<h4
+		class="font-weight-{weight}"
+		class:text-bold={bold}
+		class:text-italic={italic}
+	>
 		<slot />
 	</h4>
 {:else if variant === 'h3'}
-	<h3 class="font-weight-{weight}">
+	<h3
+		class="font-weight-{weight}"
+		class:text-bold={bold}
+		class:text-italic={italic}
+	>
 		<slot />
 	</h3>
 {:else if variant === 'h2'}
-	<h2 class="font-weight-{weight}">
+	<h2
+		class="font-weight-{weight}"
+		class:text-bold={bold}
+		class:text-italic={italic}
+	>
 		<slot />
 	</h2>
 {:else if variant === 'h1'}
-	<h1 class="font-weight-{weight}">
+	<h1
+		class="font-weight-{weight}"
+		class:text-bold={bold}
+		class:text-italic={italic}
+	>
 		<slot />
 	</h1>
 {/if}

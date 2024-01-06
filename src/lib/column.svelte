@@ -1,5 +1,4 @@
 <script>
-	export let gap = 1;
 	export let classes = '';
 	export let xs;
 	export let sm;
@@ -7,30 +6,31 @@
 	export let lg;
 	export let xl;
 	export let xxl;
-	let colClasses = '';
+	let addClasses = '';
 	$: {
+		let classArray = []
 		if (xs)
-			colClasses += `col-xs-${xs} `;
+			classArray.push(`col-xs-${xs}`);
 		if (sm)
-			colClasses += `col-sm-${sm} `;
+			classArray.push(`col-sm-${sm}`);
 		if (md)
-			colClasses += `col-md-${md} `;
+			classArray.push(`col-md-${md}`);
 		if (lg)
-			colClasses += `col-lg-${lg} `;
+			classArray.push(`col-lg-${lg}`);
 		if (xl)
-			colClasses += `col-xl-${xl} `;
+			classArray.push(`col-xl-${xl}`);
 		if (xxl)
-			colClasses += `col-xxl-${xxl} `;
+			classArray.push(`col-xxl-${xxl}`);
 
-		if (colClasses.length == 0)
-		{
-			colClasses = 'col-auto';
-		}
+		if (classArray.length == 0)
+			classArray.push('col-auto');
+
+		addClasses = classArray.join(' ');
 	}
 </script>
 
 <div
-	class="{colClasses} {classes}"
+	class="{addClasses} {classes}"
 >
 	<slot />
 </div>

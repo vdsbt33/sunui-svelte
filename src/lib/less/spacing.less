@@ -73,11 +73,68 @@ each(range(4), {
 /* Grid Gap */
 @gap: .25rem;
 
-each(range(4), {
-	.grid-gap-@{index} {
-		gap: @value * @gap;
+/* Grid row */
+.row {
+	margin-bottom: @spacing;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+/* Grid column */
+each(range(12), {
+	.col-@{index} {
+		flex: 1 0 (percentage(@value/12));
 	};
 });
+
+@media screen {
+	/* Extra small */
+	each(range(12), {
+		.col-xs-@{index} {
+			flex: 1 0 (percentage(@value/12));
+		}
+	});
+	/* Small */
+	@media (min-width: 576px) {
+		each(range(12), {
+			.col-sm-@{index} {
+				flex: 1 0 (percentage(@value/12));
+			}
+		});
+	}
+	/* Medium */
+	@media (min-width: 768px) {
+		each(range(12), {
+			.col-md-@{index} {
+				flex: 1 0 (percentage(@value/12));
+			}
+		});
+	}
+	/* Large */
+	@media (min-width: 992px) {
+		each(range(12), {
+			.col-lg-@{index} {
+				flex: 1 0 (percentage(@value/12));
+			}
+		});
+	}
+	/* X-Large */
+	@media (min-width: 1200px) {
+		each(range(12), {
+			.col-xl-@{index} {
+				flex: 1 0 (percentage(@value/12));
+			}
+		});
+	}
+	/* XX-Large */
+	@media (min-width: 1400px) {
+		each(range(12), {
+			.col-xxl-@{index} {
+				flex: 1 0 (percentage(@value/12));
+			}
+		});
+	}
+}
 
 /* Size */
 .w-100 {
@@ -88,69 +145,11 @@ each(range(4), {
 	height: 100%;
 }
 
-/* Grid row */
-.row {
-	margin-bottom: @spacing;
-	display: grid;
-	grid-template-columns: repeat(12, 1fr);
-}
+/* Justify content */
+@justifies: start, center, end, flex-start, flex-end, left, right, space-between, space-evenly, space-around;
 
-/* Grid column */
-.col-auto {
-	grid-column: auto;
-}
-
-each(range(12), {
-	.col-@{index} {
-		grid-column: auto / span @value;
-	};
+each(@justifies, {
+	.justify-content-@{value} {
+		justify-content: @value;
+	}
 });
-
-@media screen {
-	/* Extra small */
-	each(range(12), {
-		.col-xs-@{index} {
-			grid-column: span @value;
-		}
-	});
-	/* Small */
-	@media (min-width: 576px) {
-		each(range(12), {
-			.col-sm-@{index} {
-				grid-column: span @value;
-			}
-		});
-	}
-	/* Medium */
-	@media (min-width: 768px) {
-		each(range(12), {
-			.col-md-@{index} {
-				grid-column: span @value;
-			}
-		});
-	}
-	/* Large */
-	@media (min-width: 992px) {
-		each(range(12), {
-			.col-lg-@{index} {
-				grid-column: span @value;
-			}
-		});
-	}
-	/* X-Large */
-	@media (min-width: 1200px) {
-		each(range(12), {
-			.col-xl-@{index} {
-				grid-column: span @value;
-			}
-		});
-	}
-	/* XX-Large */
-	@media (min-width: 1400px) {
-		each(range(12), {
-			.col-xxl-@{index} {
-				grid-column: span @value;
-			}
-		});
-	}
-}

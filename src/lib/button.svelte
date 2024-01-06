@@ -1,7 +1,7 @@
 <script>
 	export let classes = '';
 	export let color = 'primary';
-	export let grow = true;
+	export let grow = false;
 </script>
 
 <button
