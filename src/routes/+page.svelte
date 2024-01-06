@@ -24,9 +24,6 @@
 <h3>Buttons</h3>
 <Row classes="mb-5" justify='space-evenly'>
 	<Column>
-		<Button on:click={() => alert('Hello')} />
-	</Column>
-	<Column>
 		<Button on:click={() => alert('Hello')} color='primary'>Primary</Button>
 	</Column>
 	<Column>
@@ -37,6 +34,9 @@
 	</Column>
 	<Column>
 		<Button on:click={() => alert('Hello')} color='info'>Info</Button>
+	</Column>
+	<Column>
+		<Button on:click={() => alert('Hello')} color='success'>Success</Button>
 	</Column>
 	<Column>
 		<Button on:click={() => alert('Hello')} color='danger'>&#128293;</Button>

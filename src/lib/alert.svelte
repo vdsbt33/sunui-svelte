@@ -11,8 +11,7 @@
 <div
 	class="{classes}"
 	class:hide={!visible}
-	class:primary={color === 'primary'}
-	class:secondary={color === 'secondary'}
+	class:primary={color === 'primary'} class:secondary={color === 'secondary'}
 	class:tertiary={color === 'tertiary'}
 	class:success={color === 'success'}
 	class:danger={color === 'danger'}
@@ -49,37 +48,37 @@
 	}
 
 	.primary {
-		background-color: var(--primary);
+		background-color: var(--primary-alert);
 		border: 1px solid var(--primary-border);
 	}
 
 	.secondary {
-		background-color: var(--secondary);
+		background-color: var(--secondary-alert);
 		border: 1px solid var(--secondary-border);
 	}
 
 	.tertiary {
-		background-color: var(--tertiary);
+		background-color: var(--tertiary-alert);
 		border: 1px solid var(--tertiary-border);
 	}
 
 	.success {
-		background-color: var(--success);
+		background-color: var(--success-alert);
 		border: 1px solid var(--success-border);
 	}
 
 	.danger {
-		background-color: var(--danger);
+		background-color: var(--danger-alert);
 		border: 1px solid var(--danger-border);
 	}
 
 	.warning {
-		background-color: var(--warning);
+		background-color: var(--warning-alert);
 		border: 1px solid var(--warning-border);
 	}
 
 	.info {
-		background-color: var(--info);
+		background-color: var(--info-alert);
 		border: 1px solid var(--info-border);
 	}
 </style>

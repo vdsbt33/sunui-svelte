@@ -11,6 +11,7 @@
 	class:primary={color === 'primary'}
 	class:secondary={color === 'secondary'}
 	class:tertiary={color === 'tertiary'}
+	class:success={color === 'success'}
 	class:danger={color === 'danger'}
 	class:warning={color === 'warning'}
 	class:info={color === 'info'}
@@ -56,9 +57,17 @@
 		background-color: var(--tertiary-dark);
 	}
 
+	.success {
+		background-color: var(--success);
+		color: var(--text-light);
+	}
+	.success:hover {
+		background-color: var(--success-dark);
+	}
+
 	.danger {
 		background-color: var(--danger);
-		color: var(--text);
+		color: var(--text-light);
 	}
 	.danger:hover {
 		background-color: var(--danger-dark);
