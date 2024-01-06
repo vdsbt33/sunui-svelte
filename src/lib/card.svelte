@@ -12,7 +12,7 @@
 		display: block;
 		background-color: var(--light);
 		border-radius: 1rem;
-		box-shadow: 0 0 3px #00000033;
+		box-shadow: 0 0 4px #00000015;
 	}
 </style>
 
