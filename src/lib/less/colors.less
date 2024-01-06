@@ -3,18 +3,18 @@
 @emphasis:        #FFFFFF;
 @emphasis-dark:   darken(@emphasis, 10%);
 
-@light:           #FFE3E0;
+@light:           #F7F7FF;
 @dark:            #111111;
 
-@primary:         #009DDC;
+@primary:         #0267C1;
 @primary-light:   lighten(@primary, 10%);
 @primary-dark:    darken(@primary, 10%);
 
-@secondary:       #AE8E1C;
+@secondary:       #27FB6B;
 @secondary-light: lighten(@secondary, 10%);
 @secondary-dark:  darken(@secondary, 10%);
 
-@tertiary:        #62A87C;
+@tertiary:        #0BC9CD;
 @tertiary-light:  lighten(@tertiary, 10%);
 @tertiary-dark:   darken(@tertiary, 10%);
 
@@ -95,3 +95,6 @@ each(@bg-colors, {
 	}
 });
 
+html {
+	background-color: @body;
+}

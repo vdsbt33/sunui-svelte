@@ -13,6 +13,7 @@
 	class:tertiary={color === 'tertiary'}
 	class:danger={color === 'danger'}
 	class:warning={color === 'warning'}
+	class:info={color === 'info'}
 	class:w-100={grow === true}
 >
 	<slot>
@@ -33,7 +34,7 @@
 
 	.primary {
 		background-color: var(--primary);
-		color: var(--text);
+		color: var(--text-light);
 	}
 	.primary:hover {
 		background-color: var(--primary-dark);
@@ -57,7 +58,7 @@
 
 	.danger {
 		background-color: var(--danger);
-		color: var(--text-dark);
+		color: var(--text);
 	}
 	.danger:hover {
 		background-color: var(--danger-dark);
@@ -69,6 +70,14 @@
 	}
 	.warning:hover {
 		background-color: var(--warning-dark);
+	}
+
+	.info {
+		background-color: var(--info);
+		color: var(--text);
+	}
+	.info:hover {
+		background-color: var(--info-dark);
 	}
 
 </style>
