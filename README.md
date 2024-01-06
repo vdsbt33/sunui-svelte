@@ -7,6 +7,7 @@
 - [x] Grid layout
 - [x] Card
 - [x] Alert
+- [x] Container
 - [ ] Badge
 - [ ] Skeleton
 - [ ] Links
