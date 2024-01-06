@@ -79,5 +79,4 @@
 	.info:hover {
 		background-color: var(--info-dark);
 	}
-
 </style>

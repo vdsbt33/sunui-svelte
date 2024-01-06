@@ -4,7 +4,8 @@
 		Typography,
 		Row,
 		Column,
-		Card
+		Card,
+		Alert
 	} from '$lib';
 
 	function onClickButton() {
@@ -106,7 +107,32 @@
 </Row>
 
 <Typography variant="h3" classes="mt-5">Cards</Typography>
-<Card>
-	<Typography variant="h4">Hello</Typography>
-	<Typography variant="p">Card content!</Typography>
-</Card>
+<Row>
+	<Column xs={3}>
+		<Card>
+			<Typography variant="h4">Card 1</Typography>
+			<Typography variant="p">Card content!</Typography>
+		</Card>
+	</Column>
+	<Column xs={6}>
+		<Card>
+			<Typography variant="h4">Card 2</Typography>
+			<Typography variant="p">Card content!</Typography>
+		</Card>
+	</Column>
+	<Column xs={3}>
+		<Card>
+			<Typography variant="h4">Card 2</Typography>
+			<Typography variant="p">Card content!</Typography>
+		</Card>
+	</Column>
+</Row>
+
+<Typography variant="h3" classes="mt-5">Alerts</Typography>
+<Alert color="primary">Primary</Alert>
+<Alert color="secondary">Secondary</Alert>
+<Alert color="tertiary">Tertiary</Alert>
+<Alert color="success">Success</Alert>
+<Alert color="warning">Warning</Alert>
+<Alert color="danger">Danger</Alert>
+<Alert color="info">Info</Alert>
