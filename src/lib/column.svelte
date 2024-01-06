@@ -35,3 +35,10 @@
 	<slot />
 </div>
 
+<style>
+	div {
+		box-sizing: border-box;
+		padding: .25rem;
+	}
+</style>
+

@@ -9,17 +9,17 @@
 };
 
 /* Spacing */
-@spacing: .5rem;
+@spacing: .25rem;
 
 /* Margin Full */
 each(range(5), {
-	.m@{index} { margin: @spacing * @index;
+	.m-@{index} { margin: @spacing * @index;
 	};
 });
 
 /* Margin Horizontal */
 each(range(5), {
-	.mx@{index} {
+	.mx-@{index} {
 		margin-left: @spacing * @index;
 		margin-right: @spacing * @index;
 	};
@@ -27,7 +27,7 @@ each(range(5), {
 
 /* Margin Vertical */
 each(range(5), {
-	.my@{index} {
+	.my-@{index} {
 		margin-top: @spacing * @index;
 		margin-bottom: @spacing * @index;
 	};
@@ -61,6 +61,56 @@ each(range(5), {
 	};
 });
 
+/* Padding Full */
+each(range(5), {
+	.p-@{index} { padding: @spacing * @index;
+	};
+});
+
+/* Padding Horizontal */
+each(range(5), {
+	.px-@{index} {
+		padding-left: @spacing * @index;
+		padding-right: @spacing * @index;
+	};
+});
+
+/* Padding Vertical */
+each(range(5), {
+	.py-@{index} {
+		padding-top: @spacing * @index;
+		padding-bottom: @spacing * @index;
+	};
+});
+
+/* Padding Left */
+each(range(5), {
+	.pl-@{index} {
+		padding-left: @spacing * @index;
+	};
+});
+
+/* Padding Top */
+each(range(5), {
+	.pt-@{index} {
+		padding-top: @spacing * @index;
+	};
+});
+
+/* Padding Right */
+each(range(5), {
+	.pr-@{index} {
+		padding-right: @spacing * @index;
+	};
+});
+
+/* Padding Bottom */
+each(range(5), {
+	.pb-@{index} {
+		padding-bottom: @spacing * @index;
+	};
+});
+
 /* Border Radius */
 @radius: .25rem;
 
@@ -69,9 +119,6 @@ each(range(4), {
 		border-radius: @radius * @value;
 	};
 });
-
-/* Grid Gap */
-@gap: .25rem;
 
 /* Grid row */
 .row {
