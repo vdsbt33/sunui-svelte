@@ -5,7 +5,7 @@
 - [x] Buttons
 - [x] Typography
 - [x] Grid layout
-- [ ] Card
+- [x] Card
 - [ ] Alert
 - [ ] Badge
 - [ ] Skeleton
