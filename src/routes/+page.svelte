@@ -107,6 +107,14 @@
 			</div>
 		</Column>
 	</Row>
+
+	<Row>
+		<Column col={6}>
+			<div class="bg-tertiary text-center">
+				Growing column
+			</div>
+		</Column>
+	</Row>
 	
 	<Typography variant="h3" classes="mt-5">Cards</Typography>
 	<Row>
