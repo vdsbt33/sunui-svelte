@@ -6,7 +6,8 @@
 		Column,
 		Card,
 		Alert,
-		Container
+		Container,
+		Badge
 	} from '$lib';
 
 	function onClickButton() {
@@ -137,4 +138,36 @@
 	<Alert color="warning">Warning</Alert>
 	<Alert color="danger">Danger</Alert>
 	<Alert color="info">Info</Alert>
+
+	<Typography variant="h3" classes="mt-5">Badges</Typography>
+	<Row align='center'>
+		<Column>
+			<Button color='primary'>
+				Profile
+				<Badge color='light'>5</Badge>
+			</Button>
+		</Column>
+		<Column>
+			<Badge color='primary'>Primary</Badge>
+		</Column>
+		<Column>
+			<Badge color='secondary'>Secondary</Badge>
+		</Column>
+		<Column>
+			<Badge color='success'>Success</Badge>
+		</Column>
+		<Column>
+			<Badge color='warning'>Warning</Badge>
+		</Column>
+		<Column>
+			<Badge color='danger'>Danger</Badge>
+		</Column>
+		<Column>
+			<Badge color='light'>Light</Badge>
+		</Column>
+		<Column>
+			<Badge color='dark'>Dark</Badge>
+		</Column>
+	</Row>
+
 </Container>

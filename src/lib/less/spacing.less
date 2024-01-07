@@ -273,6 +273,15 @@ each(@justifies, {
 	}
 });
 
+/* Align items */
+@aligns: baseline, center, end, flex-start, flex-end;
+
+each(@justifies, {
+	.align-items-@{value} {
+		align-items: @value;
+	}
+});
+
 /* Display */
 @displays: block, inline, inline-block, flex, none;
 

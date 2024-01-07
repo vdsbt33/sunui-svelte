@@ -8,7 +8,7 @@
 - [x] Card
 - [x] Alert
 - [x] Container
-- [ ] Badge
+- [x] Badge
 - [ ] Skeleton
 - [ ] Links
 - [ ] Images
