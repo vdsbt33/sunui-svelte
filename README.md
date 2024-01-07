@@ -40,7 +40,3 @@ At the root folder, run `./generate_css.sh && npm run dev`.
 
 ### Contributing
 This project is currently not accepting contributions, but you may use it and fork it at your own discretion.
-
-### Known bugs
-- Grid layout columns fill all available space even when sum of columns is lesser than 12.
-Ex: a single col-4 fills all the available space, like a col-12.
